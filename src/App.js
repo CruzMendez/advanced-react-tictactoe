@@ -1,4 +1,7 @@
 import React, { Component } from "react";
+import Cells from "./Cells";
+import Board from "./Board";
+// import Click from "./Click";
 
 
 class App extends Component {
@@ -10,11 +13,7 @@ class App extends Component {
   }
   render() {
     return (
-      <div id="board">
-        <div className="cell"></div>
-        <div id="announce-winner"></div>
-        <button id="clear">Clear Board</button>
-      </div>
+      <Board/>
     );
   }
 }
